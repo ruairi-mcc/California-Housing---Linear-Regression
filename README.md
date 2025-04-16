@@ -66,6 +66,17 @@ The project has been extended to include:
 - Median income (`MedInc`) has the strongest positive correlation with price.
 - Features like population and average occupancy show weak influence on price.
 
+- After training the linear regression model, the following metrics were calculated:
+
+- **Mean Squared Error (MSE)**: A measure of the average squared difference between the predicted and actual values.
+- **R-Squared (R²)**: A statistical measure that indicates the proportion of the variance in the target variable that is explained by the model.
+
+The model evaluation showed the following results:
+- **Training MSE**: 0.5179
+- **Testing MSE**: 0.5559
+- **Training R²**: 0.6126
+- **Testing R²**: 0.5758
+
 ### Sample Insights
 
 - **High Correlation Between `MedInc` and `PRICE`**:
@@ -76,6 +87,15 @@ The project has been extended to include:
 
 ---
 
+
+## Conclusion
+
+This project demonstrates a basic machine learning pipeline for housing price prediction using the California Housing dataset. By applying feature engineering, advanced modeling techniques, and rigorous model evaluation, we have improved the model's accuracy and reliability. The use of residual analysis and cross-validation helped ensure that the model generalizes well to new data.
+
+Future steps could include:
+- Implementing additional machine learning models like Random Forests or Gradient Boosting for better accuracy.
+- Deploying the model as a web service for real-time predictions.
+---
 ## 🚀 Key Steps
 
 1. **Load Data**: Fetch dataset using `fetch_california_housing()`
@@ -101,22 +121,7 @@ The project has been extended to include:
 - Use log transformation or polynomial features
 - Implement cross-validation for robust evaluation
 
----
-
-## 🧠 Author’s Note
-
-This project serves as an introductory regression analysis using a real-world dataset. It’s designed to be a simple, reproducible workflow that can be extended for deeper modeling and experimentation.
-
----
-# California Housing Price Prediction
-
-
-
-
-
-## Additional Enhancements
-
-1. **Data Preprocessing**:
+- 1. **Data Preprocessing**:
    - Checked for missing values (none present).
    - Displayed summary statistics to understand the range and distribution of the data.
 
@@ -130,26 +135,17 @@ This project serves as an introductory regression analysis using a real-world da
 4. **Cross-Validation**:
    - Used **K-fold cross-validation** to assess the performance of the model on different subsets of the data, ensuring it performs well on unseen data.
 
-## Model Evaluation
+---
 
-After training the linear regression model, the following metrics were calculated:
+## 🧠 Author’s Note
 
-- **Mean Squared Error (MSE)**: A measure of the average squared difference between the predicted and actual values.
-- **R-Squared (R²)**: A statistical measure that indicates the proportion of the variance in the target variable that is explained by the model.
+This project serves as an introductory regression analysis using a real-world dataset. It’s designed to be a simple, reproducible workflow that can be extended for deeper modeling and experimentation.
 
-The model evaluation showed the following results:
-- **Training MSE**: 0.5179
-- **Testing MSE**: 0.5559
-- **Training R²**: 0.6126
-- **Testing R²**: 0.5758
+---
 
-## Conclusion
 
-This project demonstrates a basic machine learning pipeline for housing price prediction using the California Housing dataset. By applying feature engineering, advanced modeling techniques, and rigorous model evaluation, we have improved the model's accuracy and reliability. The use of residual analysis and cross-validation helped ensure that the model generalizes well to new data.
 
-Future steps could include:
-- Implementing additional machine learning models like Random Forests or Gradient Boosting for better accuracy.
-- Deploying the model as a web service for real-time predictions.
+
 
 ## Dependencies
 
